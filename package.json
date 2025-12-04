@@ -1,0 +1,48 @@
+{
+  "name": "@justbrunasso/n8n-nodes-glpi",
+  "version": "1.0.7",
+  "description": "GLPI REST API node for n8n (GLPI 10.x) with Criteria Builder and automatic session handling (no cache).",
+  "keywords": [
+    "n8n",
+    "n8n-nodes",
+    "glpi",
+    "glpi-api",
+    "glpi-node",
+    "itsm",
+    "automation",
+    "workflow"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "author": "Bruno Eduardo Santos",
+  "license": "MIT",
+  "repository": {
+    "url": "git+https://github.com/justbrunasso/n8n-nodes-glpi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/justbrunasso/n8n-nodes-glpi/issues"
+  },
+  "homepage": "https://github.com/justbrunasso/n8n-nodes-glpi#readme",
+  "engines": {
+    "node": ">=16"
+  },
+  "peerDependencies": {
+    "n8n-core": "^1.0.0",
+    "n8n-workflow": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.25",
+    "n8n-core": "^1.17.0",
+    "n8n-workflow": "^1.17.0",
+    "typescript": "^5.9.3"
+  }
+}
