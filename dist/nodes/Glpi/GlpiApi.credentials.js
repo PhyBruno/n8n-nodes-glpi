@@ -5,14 +5,14 @@ class GlpiApi {
     constructor() {
         this.name = 'glpiApi';
         this.displayName = 'GLPI API';
-        this.documentationUrl = 'https://your-glpi-docs-or-repo.example.com';
+        this.documentationUrl = 'https://github.com/PhyBruno/n8n-nodes-glpi';
         this.properties = [
             {
                 displayName: 'Base URL',
                 name: 'baseUrl',
                 type: 'string',
                 default: '',
-                placeholder: 'https://atendimento.centrium.com.br',
+                placeholder: 'https://glpi.example.com',
                 required: true,
                 description: 'Base URL sem o sufixo /apirest.php',
             },
@@ -23,33 +23,32 @@ class GlpiApi {
                 typeOptions: { password: true },
                 default: '',
                 required: true,
+                description: 'Token da aplicação (App-Token)',
             },
             {
-                displayName: 'User Token (optional)',
+                displayName: 'User Token',
                 name: 'userToken',
                 type: 'string',
                 typeOptions: { password: true },
                 default: '',
                 required: false,
-                description: 'Se presente, envia header "Authorization: user_token <token>" e pode ser usado para initSession.',
+                description: 'Token do usuário (opcional). Se informado será enviado como Authorization: user_token <token>.',
             },
             {
-                displayName: 'Username (for Basic Auth, optional)',
+                displayName: 'Username (Basic Auth)',
                 name: 'username',
                 type: 'string',
                 default: '',
-                placeholder: 'usuário',
                 required: false,
             },
             {
-                displayName: 'Password (for Basic Auth, optional)',
+                displayName: 'Password (Basic Auth)',
                 name: 'password',
                 type: 'string',
                 typeOptions: { password: true },
                 default: '',
-                placeholder: 'senha',
                 required: false,
-            }
+            },
         ];
     }
 }
