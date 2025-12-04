@@ -1,6 +1,6 @@
 {
   "name": "@justbrunasso/n8n-nodes-glpi",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "GLPI REST API node for n8n (GLPI 10.x) with Criteria Builder and automatic session handling (no cache).",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
